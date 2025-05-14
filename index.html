@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Fitness Class</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        header p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            flex: 1 1 300px;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card h3 {
+            color: #ff6b6b;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .cta {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+        
+        button {
+            background-color: white;
+            color: #ff6b6b;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .schedule {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .schedule-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .day {
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rhythm Revolution</h1>
+        <p>Get ready to shake off stress and ignite your energy in our high-octane dance fitness sessions!</p>
+    </header>
+    
+    <section id="about">
+        <h2 style="text-align: center; margin-bottom: 40px;">Experience the Dance Difference</h2>
+        <div class="container">
+            <div class="card">
+                <h3>Energizing Workouts</h3>
+                <p>This isn't just a workout—it's a heart-pumping party where sweat meets rhythm and fitness feels like freedom. Each 60-minute session blends cardio bursts with muscle-sculpting moves for a complete body transformation.</p>
+            </div>
+            <div class="card">
+                <h3>All Levels Welcome</h3>
+                <p>Our supportive, judgment-free atmosphere welcomes all levels, whether you're a seasoned dancer or have two left feet. Everyone moves at their own pace while our instructors provide modifications for all fitness levels.</p>
+            </div>
+            <div class="card">
+                <h3>Amazing Results</h3>
+                <p>Expect to torch calories, boost coordination, and release those feel-good endorphins that keep you buzzing long after class ends. Join our vibrant community where fitness meets fun!</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="schedule" style="background-color: #f0f0f0;">
+        <h2 style="text-align: center; margin-bottom: 40px;">Class Schedule</h2>
+        <div class="schedule">
+            <div class="schedule-item">
+                <span class="day">Monday</span>
+                <span class="time">6:30 PM - 7:30 PM</span>
+                <span class="instructor">with Sarah</span>
+            </div>
+            <div class="schedule-item">
+                <span class="day">Wednesday</span>
+                <span class="time">7:00 PM - 8:00 PM</span>
+                <span class="instructor">with Miguel</span>
+            </div>
+            <div class="schedule-item">
+                <span class="day">Saturday</span>
+                <span class="time">10:00 AM - 11:00 AM</span>
+                <span class="instructor">with Taylor</span>
+            </div>
+        </div>
+    </section>
+    
+    <div class="cta">
+        <h2>Ready to Join the Dance Revolution?</h2>
+        <p>Your first class is FREE! Come experience the energy, music, and movement.</p>
+        <button>Book Your Spot Now</button>
+    </div>
+    
+    <footer>
+        <p>Contact us: info@rhythmrevolution.com | (555) 123-4567</p>
+        <p>123 Dance Street, Fitness City</p>
+        <p>&copy; 2025 Rhythm Revolution. All rights reserved.</p>
+    </footer>
+</body>
+</html>
